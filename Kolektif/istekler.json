@@ -1,0 +1,42 @@
+{
+  "udemy": [
+    "/udemyGorsel?kategori=python",
+    "/udemy?kategori=python",
+    "/udemy/python"
+  ],
+  "hava":[
+    "/havaGorsel?il=canakkale&ilce=merkez",
+    "/hava?il=hatay&ilce=samandag",
+    "/hava/mardin/nusaybin"
+  ],
+  "eczane": [
+    "/eczaneGorsel?il=canakkale&ilce=merkez",
+    "/eczane?il=hatay&ilce=samandag",
+    "/eczane/mardin/nusaybin"
+  ],
+  "deprem":[
+    "/depremGorsel",
+    "",
+    "/deprem"
+  ],
+  "akaryakit":[
+    "/akaryakitGorsel",
+    "",
+    "/akaryakit"
+  ],
+  "haber": [
+    "/haberGorsel",
+    "",
+    "/haber"
+  ],
+  "bim": [
+    "/bimGorsel",
+    "",
+    "/bim"
+  ],
+  "doviz": [
+    "/dovizGorsel",
+    "",
+    "/doviz"
+  ]
+}

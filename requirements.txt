@@ -1,0 +1,8 @@
+Flask==1.1.2
+waitress==1.4.4
+Flask-Sitemap==0.3.0
+requests==2.25.0
+rich==9.3.0
+colorama==0.4.4
+pytz==2020.4
+KekikSpatula==0.2.7

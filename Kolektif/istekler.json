@@ -14,29 +14,49 @@
     "/eczane?il=hatay&ilce=samandag",
     "/eczane/mardin/nusaybin"
   ],
+  "ezan": [
+    "/ezanGorsel?il=canakkale",
+    "/ezan?il=hatay",
+    "/ezan/mardin"
+  ],
+  "google": [
+    "/googleGorsel?ara=lorem impsum sit amet",
+    "/google?ara=lorem impsum sit amet",
+    "/google/lorem impsum sit amet"
+  ],
+  "youtube": [
+    "",
+    "/youtube?link=https://www.youtube.com/watch?v=1YlwjEQzMdU",
+    ""
+  ],
+  "trendyol": [
+    "",
+    "/trendyol?link=https://www.trendyol.com/soly/meltblown-filtre-3-katli-tam-ultrasonik-cerrahi-maske-yesil-100-adet-p-47636885",
+    ""
+  ],
   "deprem":[
     "/depremGorsel",
-    "",
-    "/deprem"
+    "/deprem",
+    ""
   ],
   "akaryakit":[
     "/akaryakitGorsel",
-    "",
-    "/akaryakit"
+    "/akaryakit",
+    ""
   ],
   "haber": [
     "/haberGorsel",
-    "",
-    "/haber"
+    "/haber",
+    ""
   ],
   "bim": [
     "/bimGorsel",
-    "",
-    "/bim"
+    "/bim",
+    ""
   ],
   "doviz": [
     "/dovizGorsel",
-    "",
-    "/doviz"
+    "/doviz",
+    ""
   ]
 }

@@ -22,7 +22,7 @@ def ezan_gorsel():
         'veriSayfasi.html',
         veriler     = vakit.veri['veri'],
         anahtarlar  = vakit.anahtarlar,
-        baslik      = f"«{vakit.veri['kaynak']}» {il} vakit Kursları"
+        baslik      = f"«{vakit.veri['kaynak']}» {il} Ezan Vakitleri"
     )
 
 @app.route('/ezan')

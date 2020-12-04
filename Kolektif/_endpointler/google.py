@@ -22,7 +22,7 @@ def google_gorsel():
         'veriSayfasi.html',
         veriler     = google.veri['veri'],
         anahtarlar  = google.anahtarlar,
-        baslik      = f"«{google.veri['kaynak']}» {ara} google Kursları"
+        baslik      = f"«{google.veri['kaynak']}» {ara} Google Sonuçları"
     )
 
 @app.route('/google')

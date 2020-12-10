@@ -70,11 +70,11 @@ class KekikTaban(object):
     def bildirim(self):
         if platform.machine() == "aarch64":
             return
-        elif self.kullanici_adi == "gitpod":
+        if self.kullanici_adi == "gitpod":
             return
-        elif self.bellenim_surumu.split('-')[-1] == 'aws':
+        if self.bellenim_surumu.split('-')[-1] == 'aws':
             return
-        elif self.isletim_sistemi == "Windows" and self.bellenim_surumu >= "10":
+        if self.isletim_sistemi == "Windows" and self.bellenim_surumu >= "10":
             try:
                 from win10toast import ToastNotifier
             except ModuleNotFoundError:

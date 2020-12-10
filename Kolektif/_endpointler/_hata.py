@@ -1,8 +1,11 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
+import json
+import os
+
+from flask import jsonify, make_response, send_from_directory
+
 from Kolektif import app
-from flask import make_response, jsonify, send_from_directory
-import json, os
 
 istekler = json.load(open("Kolektif/istekler.json", "r+", encoding='utf8'))
 

@@ -1,8 +1,7 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
-from konsolTaban import KekikTaban
-
 from Kolektif import onemli
+from konsolTaban import KekikTaban
 
 KekikTaban(
     baslik   = "@KekikAkademi Kolektif API",
@@ -11,8 +10,9 @@ KekikTaban(
     girinti  = 2
 )
 
-from Kolektif import app
 import os
+
+from Kolektif import app
 
 port = int(os.environ.get("PORT", 5000))
 host = "0.0.0.0"

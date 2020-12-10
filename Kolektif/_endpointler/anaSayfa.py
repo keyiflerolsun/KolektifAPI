@@ -1,8 +1,10 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
-from Kolektif import app, log_ver
-from flask import render_template, request
 import json
+
+from flask import render_template, request
+
+from Kolektif import app, log_ver
 
 istekler = json.load(open("Kolektif/istekler.json", "r+", encoding='utf8'))
 

@@ -1,8 +1,14 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
+import datetime
+import os
+import platform
+
+import pytz
+import requests
 from pyfiglet import Figlet
-import os, platform, requests, datetime, pytz
 from rich.console import Console
+
 
 class KekikTaban(object):
 

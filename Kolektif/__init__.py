@@ -24,4 +24,6 @@ from flask_sitemap import Sitemap
 app = Flask(__name__)
 ext = Sitemap(app=app)
 
-from Kolektif._endpointler import anaSayfa, _hata, eczane, haber, udemy, deprem, akaryakit, hava, bim, doviz, ezan, google, trendyol, youtube
+from Kolektif._endpointler import (_hata, akaryakit, anaSayfa, bim, deprem,
+                                   doviz, eczane, ezan, google, haber, hava,
+                                   trendyol, udemy, youtube)

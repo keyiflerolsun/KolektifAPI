@@ -1,9 +1,9 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
-from Kolektif import app, log_ver
-from flask import render_template, jsonify, request
-
+from flask import jsonify, render_template, request
 from KekikSpatula import SonDakika
+
+from Kolektif import app, log_ver
 
 haber   = SonDakika()
 kaynak  = haber.veri['kaynak']

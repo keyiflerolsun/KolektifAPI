@@ -1,10 +1,11 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
+from flask import jsonify, request
+from KekikSpatula import KekikTube
+
 from Kolektif import app, log_ver
-from flask import request, jsonify
 from Kolektif._endpointler._hata import besYuz, dortYuzDort
 
-from KekikSpatula import KekikTube
 
 @app.route('/youtube')
 def youtube_json_args():

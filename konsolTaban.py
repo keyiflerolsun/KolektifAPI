@@ -4,7 +4,7 @@ from pyfiglet import Figlet
 import os, platform, requests, datetime, pytz
 from rich.console import Console
 
-class KekikTaban(object):
+class KekikTaban():
 
     konsol = Console(width=70, log_path=False, highlight=False)
 

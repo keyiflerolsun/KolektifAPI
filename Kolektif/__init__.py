@@ -2,7 +2,7 @@
 
 from rich.console import Console
 
-konsol = Console(log_path=False)
+konsol = Console(log_path=False, highlight=False)
 
 def hata(yazi):
    konsol.print(yazi, style="bold red")

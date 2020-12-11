@@ -9,7 +9,7 @@ host = "0.0.0.0"
 if __name__ == '__main__':
     #app.run(debug = True, host = '0.0.0.0', port = port)
 
-    onemli(f'\n\tKolektifAPI [bold red]{host}[yellow]:[/]{port}[/]\'de başlatılmıştır...\n')
+    onemli(f'\nKolektifAPI [bold red]{host}[yellow]:[/]{port}[/]\'de başlatılmıştır...\n')
 
     from waitress import serve
     serve(app, host = host, port = port)

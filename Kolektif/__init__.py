@@ -12,10 +12,10 @@ taban = KekikTaban(
 konsol = taban.konsol
 
 def onemli(yazi):
-   konsol.print(yazi, style="bold cyan")
+   konsol.print(yazi, style="bold cyan", width=70, justify="center")
 def log_ver(istek):
-    # konsol.log(f"[green]IP Bilgisi :[/] [bold red]{istek.environ.get('HTTP_X_REAL_IP', istek.remote_addr)}[/]  [blue]--[/]  [green]GET :[/] [bold yellow]{istek.host_url[:-1]}{istek.full_path}[/]", highlight=False)
-    konsol.log(f"[bold red]{istek.environ.get('HTTP_X_REAL_IP', istek.remote_addr)}[/]  [blue]--[/] [bold yellow]{istek.full_path}[/]", highlight=False)
+    konsol.log(f"[green]IP Bilgisi :[/] [bold red]{istek.environ.get('HTTP_X_REAL_IP', istek.remote_addr)}[/]  [blue]--[/]  [green]GET :[/] [bold yellow]{istek.host_url[:-1]}{istek.full_path}[/]", highlight=False)
+    # konsol.log(f"[bold red]{istek.environ.get('HTTP_X_REAL_IP', istek.remote_addr)}[/]  [blue]--[/] [bold yellow]{istek.full_path}[/]", highlight=False)
 
 from flask import Flask
 from flask_sitemap import Sitemap

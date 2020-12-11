@@ -1,0 +1,30 @@
+{% extends "taban.html" %}
+{% block content %}
+
+<h2>{{ baslik }}</h2>
+
+<h3 style="text-align:center;">Bizlere ilham kaynağı olan collect api'ye teşekkürler..<br>Küçük bir farkımız var; biz istekleri ücretlendirmiyoruz ve <a href="https://github.com/keyiflerolsun/KolektifAPI" target="_blank" rel="noopener noreferrer" class="sari">kaynak kodlarımız</a> gayet şeffaf :)</h3>
+
+<table class="dataframe KolektifAPI">
+  <caption></caption>
+  <thead>
+    <tr>
+      <th scope="row"></th>
+      <th scope="row">Görsel Veri Erişimi</th>
+      <th scope="row">Argüman ile JSON Erişimi</th>
+      <th scope="row">Dizin ile JSON Erişimi</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for anahtar, linkler in veriler.items() %}
+    <tr>
+      <td style="font-weight: bold;">{{ anahtar }}</td>
+        {% for link in linkler %}
+      <td><a href="{{ link }}" target="_blank" rel="noopener noreferrer">{{ link }}</a></td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+  
+{% endblock %}

@@ -1,0 +1,5 @@
+KekikTaban
+Flask
+waitress
+Flask-Sitemap
+KekikSpatula

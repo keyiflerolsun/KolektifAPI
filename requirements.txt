@@ -1,5 +1,5 @@
-KekikTaban
+KekikTaban>=0.0.6
+KekikSpatula>=0.3.7
 Flask
 waitress
 Flask-Sitemap
-KekikSpatula

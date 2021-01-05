@@ -1,5 +1,5 @@
 # KolektifAPI
-Flask Tabanlı KekikSpatula API
+Flask Tabanlı [KekikSpatula](https://github.com/keyiflerolsun/KekikSpatula) API
 
 ```python
 {
@@ -36,6 +36,11 @@ Flask Tabanlı KekikSpatula API
   "trendyol": [
     "",
     "/trendyol?link=https://www.trendyol.com/soly/meltblown-filtre-3-katli-tam-ultrasonik-cerrahi-maske-yesil-100-adet-p-47636885",
+    ""
+  ],
+  "ucak":[
+    "/ucakGorsel",
+    "/ucak",
     ""
   ],
   "deprem":[

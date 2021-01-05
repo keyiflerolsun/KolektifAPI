@@ -14,7 +14,7 @@ konsol = taban.konsol
 def onemli(yazi):
    konsol.print(yazi, style="bold cyan", width=70, justify="center")
 def log_ver(istek):
-    konsol.log(f"[green]IP Bilgisi :[/] [bold red]{istek.environ.get('HTTP_X_REAL_IP', istek.remote_addr)}[/]  [blue]--[/]  [green]GET :[/] [bold yellow]{istek.host_url[:-1]}{istek.full_path}[/]", highlight=False)
+    konsol.log(f"[green]IP Bilgisi :[/] [bold red]{istek.environ.get('HTTP_X_REAL_IP', istek.remote_addr)}[/]  [blue]--[/]  [green]{istek.method} :[/] [bold yellow]{istek.host_url[:-1]}{istek.full_path}[/]", highlight=False)
     # konsol.log(f"[bold red]{istek.environ.get('HTTP_X_REAL_IP', istek.remote_addr)}[/]  [blue]--[/] [bold yellow]{istek.full_path}[/]", highlight=False)
 
 from flask import Flask
@@ -29,4 +29,4 @@ app.config['SITEMAP_INCLUDE_RULES_WITHOUT_PARAMS'] = True
 
 ext = Sitemap(app=app)
 
-from Kolektif._endpointler import anaSayfa, _hata, eczane, haber, udemy, deprem, akaryakit, hava, bim, doviz, ezan, google, trendyol, youtube
+from Kolektif._endpointler import anaSayfa, _hata, eczane, haber, udemy, deprem, akaryakit, hava, bim, doviz, ezan, google, trendyol, youtube, ucak

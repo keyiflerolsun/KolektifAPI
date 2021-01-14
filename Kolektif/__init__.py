@@ -29,4 +29,4 @@ app.config['SITEMAP_INCLUDE_RULES_WITHOUT_PARAMS'] = True
 
 ext = Sitemap(app=app)
 
-from Kolektif._endpointler import anaSayfa, _hata, eczane, haber, udemy, deprem, akaryakit, hava, bim, doviz, ezan, google, trendyol, youtube, ucak
+from Kolektif._endpointler import anaSayfa, _hata, eczane, haber, udemy, deprem, akaryakit, hava, bim, doviz, ezan, google, trendyol, youtube, ucak, masal

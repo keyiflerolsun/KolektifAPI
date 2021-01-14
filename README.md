@@ -43,6 +43,11 @@ Flask Tabanlı [KekikSpatula](https://github.com/keyiflerolsun/KekikSpatula) API
     "/ucak",
     ""
   ],
+  "masal":[
+    "/masalGorsel",
+    "/masal",
+    ""
+  ],
   "deprem":[
     "/depremGorsel",
     "/deprem",

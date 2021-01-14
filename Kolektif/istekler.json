@@ -39,6 +39,11 @@
     "/ucak",
     ""
   ],
+  "masal":[
+    "/masalGorsel",
+    "/masal",
+    ""
+  ],
   "deprem":[
     "/depremGorsel",
     "/deprem",

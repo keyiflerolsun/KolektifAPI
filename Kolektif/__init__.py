@@ -69,7 +69,7 @@ def istek_log(yanit:Response) -> Response:
         "url"    : request.host_url[:-1] + request.full_path,
         # "data"   : (request.form.to_dict()) or (loads(request.data) if request.data else None),
         # "data"   : request.data or request.form.to_dict(),
-        "data"   : loads(request.data.decode("utf-8")) if request.data else request.form.to_dict()
+        "data"   : loads(request.data.decode("utf-8")) if request.data else request.form.to_dict(),
         "kod"    : yanit.status_code,
         "sure"   : round(simdi - g.start, 2),
         "ip"     : log_ip,

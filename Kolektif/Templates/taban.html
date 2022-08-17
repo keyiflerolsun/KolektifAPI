@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <!-- Gerekli meta tagler -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Statik CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='stil.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon"/>
+
+    <title>{{ baslik }} | KolektifAPI</title>
+
+</head>
+<body>
+
+    <div class=KolektifAPI>
+    <h1><span class="mavi">&lt;</span> <a href="https://github.com/keyiflerolsun/KolektifAPI" target="_blank" rel="noopener noreferrer">Kolektif</a> <span class="mavi">&gt;</span> <span class="sari">API</span></h1>
+
+    {% block content %}
+    {% endblock %}
+
+    <h3 style="text-align:center;"><a href="https://KekikAkademi.org/Kahve" target="_blank" rel="noopener noreferrer">☕️ buymeacoffee</a></h3>
+    <h1>for <span class="mavi"><a href="http://t.me/KekikAkademi" target="_blank" rel="noopener noreferrer">KekikAkademi</a></span><span class="sari"> \n</span></h1>
+    <h2>created by <a href="http://t.me/keyiflerolsun" target="_blank" rel="noopener noreferrer">keyiflerolsun</a></h2>
+    </div>
+
+</body>
+</html>

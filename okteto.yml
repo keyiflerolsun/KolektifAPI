@@ -1,0 +1,14 @@
+# Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
+
+name: kolektifapi
+autocreate: true
+image: okteto/python:3
+command: bash
+volumes:
+  - /root/.cache/pip
+sync:
+  - .:/usr/src/app
+forward:
+  - 8080:8080
+reverse:
+  - 1453:1453

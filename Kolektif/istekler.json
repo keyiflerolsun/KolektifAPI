@@ -1,0 +1,67 @@
+{
+  "udemy": [
+    "/udemyGorsel?kategori=python",
+    "/udemy?kategori=python",
+    "/udemy/python"
+  ],
+  "eczane": [
+    "/eczaneGorsel?il=canakkale&ilce=merkez",
+    "/eczane?il=hatay&ilce=samandag",
+    "/eczane/mardin/nusaybin"
+  ],
+  "ezan": [
+    "/ezanGorsel?il=canakkale",
+    "/ezan?il=hatay",
+    "/ezan/mardin"
+  ],
+  "youtube": [
+    "",
+    "/youtube?link=https://www.youtube.com/watch?v=1YlwjEQzMdU",
+    ""
+  ],
+  "trendyol_urun": [
+    "",
+    "/trendyol_urun?link=https://www.trendyol.com/soly/meltblown-filtre-3-katli-tam-ultrasonik-cerrahi-maske-yesil-100-adet-p-47636885",
+    ""
+  ],
+  "trendyol_kategori": [
+    "",
+    "/trendyol_kategori?kategori_adi=Taşınabilir Disk&sayfa_sayisi=1",
+    ""
+  ],
+  "sahibinden": [
+    "",
+    "/sahibinden?link=https://www.sahibinden.com/ilan/emlak-konut-satilik-buyukcekmece-site-icerisinde-gol-manzarali-mustakil-4-plus1-villa-946409988/detay",
+    ""
+  ],
+  "ucak":[
+    "/ucakGorsel",
+    "/ucak",
+    ""
+  ],
+  "doviz":[
+    "/dovizGorsel",
+    "/doviz",
+    ""
+  ],
+  "akaryakit":[
+    "/akaryakitGorsel",
+    "/akaryakit",
+    ""
+  ],
+  "deprem":[
+    "/depremGorsel",
+    "/deprem",
+    ""
+  ],
+  "haber": [
+    "/haberGorsel",
+    "/haber",
+    ""
+  ],
+  "bim": [
+    "/bimGorsel",
+    "/bim",
+    ""
+  ]
+}

@@ -1,0 +1,4 @@
+{
+    "builds": [{"src": "basla.py", "use" : "@vercel/python"}],
+    "routes": [{"src": "/(.*)",    "dest": "basla.py"}]
+}

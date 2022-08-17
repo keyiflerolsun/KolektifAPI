@@ -1,0 +1,9 @@
+setuptools
+wheel
+Kekik
+KekikSpatula
+user-agents
+Flask
+Flask_Cors
+Flask-Sitemap
+waitress

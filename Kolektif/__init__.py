@@ -93,4 +93,4 @@ def istek_log(yanit:Response) -> Response:
     return yanit
 
 ####
-from Kolektif.Routers import anaSayfa, _hata, eczane, haber, udemy, deprem, bim, ezan, trendyol_urun, youtube, ucak, trendyol_kategori, doviz, akaryakit, sahibinden
+from Kolektif.Routers import anaSayfa, _hata, eczane, haber, udemy, deprem, bim, ezan, trendyol_urun, youtube, ucak, trendyol_kategori, doviz, akaryakit, sahibinden, piiz

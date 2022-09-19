@@ -83,6 +83,11 @@
     "/bimGorsel",
     "/bim",
     ""
+  ],
+  "piiz": [
+    "/piizGorsel",
+    "/piiz",
+    ""
   ]
 }
 ```

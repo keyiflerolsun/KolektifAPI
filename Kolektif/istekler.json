@@ -14,6 +14,11 @@
     "/ezan?il=hatay",
     "/ezan/mardin"
   ],
+  "google": [
+    "/googleGorsel?ara=KekikAkademi&dil=tr",
+    "/google?ara=keyiflerolsun&dil=tr",
+    "/google/kekik/tr"
+  ],
   "youtube": [
     "",
     "/youtube?link=https://www.youtube.com/watch?v=1YlwjEQzMdU",
@@ -31,7 +36,7 @@
   ],
   "sahibinden": [
     "",
-    "/sahibinden?link=https://www.sahibinden.com/ilan/emlak-konut-satilik-buyukcekmece-site-icerisinde-gol-manzarali-mustakil-4-plus1-villa-946409988/detay",
+    "/sahibinden?link=https://www.sahibinden.com/ilan/emlak-konut-satilik-sampiyonluk-garantili-kendinden-totemli-ev-338644414/detay",
     ""
   ],
   "ucak":[

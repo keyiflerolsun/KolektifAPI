@@ -1,10 +1,11 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
-from Kolektif     import app
+from Kolektif     import app, cache
 from flask        import render_template, jsonify
 from KekikSpatula import UcuzUcak
 
 @app.route("/ucakGorsel")
+@cache.cached()
 def ucak_gorsel():
     ucak = UcuzUcak()
 
@@ -16,6 +17,7 @@ def ucak_gorsel():
     )
 
 @app.route("/ucak")
+@cache.cached()
 def ucak_json():
     ucak = UcuzUcak()
 

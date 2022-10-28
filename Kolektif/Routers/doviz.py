@@ -1,10 +1,11 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
-from Kolektif     import app
+from Kolektif     import app, cache
 from flask        import render_template, jsonify
 from KekikSpatula import Doviz
 
 @app.route("/dovizGorsel")
+@cache.cached(timeout=60)
 def doviz_gorsel():
     doviz = Doviz()
 
@@ -16,6 +17,7 @@ def doviz_gorsel():
     )
 
 @app.route("/doviz")
+@cache.cached(timeout=60)
 def doviz_json():
     doviz = Doviz()
 

@@ -1,10 +1,11 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
-from Kolektif     import app
+from Kolektif     import app, cache
 from flask        import request, jsonify, abort
 from KekikSpatula import Sahibinden
 
 @app.route("/sahibinden")
+@cache.cached(timeout=6 * 60 * 60)
 def sahibinden_json_args():
     link = request.args.get("link")
     if not link:

@@ -1,10 +1,11 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
-from Kolektif     import app
+from Kolektif     import app, cache
 from flask        import render_template, jsonify
 from KekikSpatula import SonDakika
 
 @app.route("/haberGorsel")
+@cache.cached()
 def haber_gorsel():
     haber = SonDakika()
 
@@ -16,6 +17,7 @@ def haber_gorsel():
     )
 
 @app.route("/haber")
+@cache.cached()
 def haber_json():
     haber = SonDakika()
 

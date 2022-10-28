@@ -1,10 +1,11 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
-from Kolektif     import app
+from Kolektif     import app, cache
 from flask        import request, jsonify, abort
 from KekikSpatula import TrendyolKategori
 
 @app.route("/trendyol_kategori")
+@cache.cached(timeout=6 * 60 * 60)
 def trendyol_kategori_json_args():
     kategori_adi = request.args.get("kategori_adi")
     sayfa_sayisi = request.args.get("sayfa_sayisi")

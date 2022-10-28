@@ -1,10 +1,11 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
-from Kolektif     import app
+from Kolektif     import app, cache
 from flask        import render_template, jsonify
 from KekikSpatula import SonDepremler
 
 @app.route("/depremGorsel")
+@cache.cached(timeout=60)
 def deprem_gorsel():
     deprem = SonDepremler()
 
@@ -16,6 +17,7 @@ def deprem_gorsel():
     )
 
 @app.route("/deprem")
+@cache.cached(timeout=60)
 def deprem_json():
     deprem = SonDepremler()
 

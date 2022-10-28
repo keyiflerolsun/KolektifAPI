@@ -1,10 +1,11 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
-from Kolektif     import app
+from Kolektif     import app, cache
 from flask        import request, jsonify, abort
 from KekikSpatula import TrendyolUrun
 
 @app.route("/trendyol_urun")
+@cache.cached(timeout=6 * 60 * 60)
 def trendyol_urun_json_args():
     link = request.args.get("link")
     if not link:

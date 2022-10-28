@@ -5,12 +5,15 @@ from flask         import Flask
 from os            import urandom
 from flask_sitemap import Sitemap
 from flask_cors    import CORS
+from flask_caching import Cache
 from json          import load, loads
 
 istekler = load(open("Kolektif/istekler.json", "r+", encoding="utf8"))
 app      = Flask(__name__, template_folder="Templates", static_folder="Static")
+cache    = Cache(config={"CACHE_TYPE": "SimpleCache", "CACHE_DEFAULT_TIMEOUT": 60 * 60})
 ext      = Sitemap(app=app)
 CORS(app, expose_headers=["Content-Disposition"])
+cache.init_app(app)
 
 app.secret_key = urandom(16)
 app.config["JSON_SORT_KEYS"]                       = False

@@ -5,7 +5,7 @@ from flask        import request, jsonify, abort
 from KekikSpatula import KekikTube
 
 @app.route("/youtube")
-@cache.cached(timeout=6 * 60 * 60)
+@cache.cached(timeout=6 * 60 * 60, query_string=True)
 def youtube_json_args():
     link = request.args.get("link")
     if not link:

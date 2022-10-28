@@ -5,7 +5,7 @@ from flask        import render_template, request, jsonify, abort
 from KekikSpatula import DiscUdemy
 
 @app.route("/udemyGorsel")
-@cache.cached()
+@cache.cached(query_string=True)
 def udemy_gorsel():
     kategori = request.args.get("kategori")
     if not kategori:
@@ -21,7 +21,7 @@ def udemy_gorsel():
     ) if udemy.veri else abort(404)
 
 @app.route("/udemy")
-@cache.cached()
+@cache.cached(query_string=True)
 def udemy_json_args():
     kategori = request.args.get("kategori")
     if not kategori:
@@ -36,7 +36,7 @@ def udemy_json_args():
     ) if udemy.veri else abort(404)
 
 @app.route("/udemy/<kategori>")
-@cache.cached()
+@cache.cached(query_string=True)
 def udemy_json_dizin(kategori):
     if not kategori:
         return abort(500)

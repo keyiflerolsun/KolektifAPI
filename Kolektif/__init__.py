@@ -75,7 +75,7 @@ def istek_log(yanit:Response) -> Response:
         "data"   : loads(request.data.decode("utf-8")) if request.data else request.form.to_dict(),
         "kod"    : yanit.status_code,
         "sure"   : round(simdi - g.start, 2),
-        "ip"     : log_ip,
+        "ip"     : f"{request.headers.get('Cf-Connecting-Ip')} [yellow]| CF: ({log_ip})[/]" if request.headers.get("Cf-Connecting-Ip") else log_ip,
         "cihaz"  : cihaz,
         "host"   : request.host.split(":", 1)[0],
     }
@@ -89,7 +89,7 @@ def istek_log(yanit:Response) -> Response:
     konsol.log(f"{endpoint_bilgisi} {data_bilgisi}")
     konsol.log(f"[bold bright_blue]{log_veri['id']}[/][bold green]@[/][bold red]{log_veri['ip']}[/]\t[blue]|[/] [green]cihaz:[/] [magenta]{log_veri['cihaz']}[/] [blue]|[/] [bold green]{log_veri['method']}[/] [blue]-[/] [bold bright_yellow]{log_veri['kod']}[/] [blue]-[/] [bold yellow2]{log_veri['sure']}sn[/]")
 
-    ip_detay = ip_log(log_veri["ip"])
+    ip_detay = ip_log(log_veri["ip"].split()[0])
     if ("hata" not in list(ip_detay.keys())) and (ip_detay["ulke"]):
         konsol.log(f"[bold chartreuse3]{ip_detay['ulke']}[/] [blue]|[/] [bold chartreuse3]{ip_detay['il']}[/] [blue]|[/] [bold chartreuse3]{ip_detay['sirket']}[/] [blue]|[/] [bold chartreuse3]{ip_detay['isp']}[/] [blue]|[/] [bold chartreuse3]{ip_detay['host']}[/]")
 

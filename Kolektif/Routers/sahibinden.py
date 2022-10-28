@@ -5,7 +5,7 @@ from flask        import request, jsonify, abort
 from KekikSpatula import Sahibinden
 
 @app.route("/sahibinden")
-@cache.cached(timeout=6 * 60 * 60)
+@cache.cached(timeout=6 * 60 * 60, query_string=True)
 def sahibinden_json_args():
     link = request.args.get("link")
     if not link:

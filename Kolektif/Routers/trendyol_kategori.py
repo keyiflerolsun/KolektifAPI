@@ -5,7 +5,7 @@ from flask        import request, jsonify, abort
 from KekikSpatula import TrendyolKategori
 
 @app.route("/trendyol_kategori")
-@cache.cached(timeout=6 * 60 * 60)
+@cache.cached(timeout=6 * 60 * 60, query_string=True)
 def trendyol_kategori_json_args():
     kategori_adi = request.args.get("kategori_adi")
     sayfa_sayisi = request.args.get("sayfa_sayisi")

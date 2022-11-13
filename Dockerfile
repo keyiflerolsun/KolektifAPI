@@ -1,7 +1,7 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
 # Docker Python İmajı
-FROM python:3.10.6-slim-buster
+FROM python:3.10.8-slim-buster
 
 WORKDIR /usr/src/app
 COPY ./ /usr/src/app

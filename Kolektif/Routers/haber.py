@@ -5,7 +5,7 @@ from flask        import render_template, jsonify
 from KekikSpatula import SonDakika
 
 @app.route("/haberGorsel")
-@cache.cached()
+@cache.cached(timeout=60 * 60)
 def haber_gorsel():
     haber = SonDakika()
 
@@ -17,7 +17,7 @@ def haber_gorsel():
     )
 
 @app.route("/haber")
-@cache.cached()
+@cache.cached(timeout=60 * 60)
 def haber_json():
     haber = SonDakika()
 

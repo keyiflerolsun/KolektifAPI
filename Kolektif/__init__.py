@@ -10,7 +10,7 @@ from json          import load, loads
 
 istekler = load(open("Kolektif/istekler.json", "r+", encoding="utf8"))
 app      = Flask(__name__, template_folder="Templates", static_folder="Static")
-cache    = Cache(config={"CACHE_TYPE": "SimpleCache", "CACHE_DEFAULT_TIMEOUT": 60 * 60})
+cache    = Cache(config={"CACHE_TYPE": "SimpleCache", "CACHE_DEFAULT_TIMEOUT": 24 * 60 * 60})
 ext      = Sitemap(app=app)
 CORS(app, expose_headers=["Content-Disposition"])
 cache.init_app(app)

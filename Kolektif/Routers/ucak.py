@@ -5,7 +5,7 @@ from flask        import render_template, jsonify
 from KekikSpatula import UcuzUcak
 
 @app.route("/ucakGorsel")
-@cache.cached(timeout=60 * 60)
+@cache.cached()
 def ucak_gorsel():
     ucak = UcuzUcak()
 
@@ -17,7 +17,7 @@ def ucak_gorsel():
     )
 
 @app.route("/ucak")
-@cache.cached(timeout=60 * 60)
+@cache.cached()
 def ucak_json():
     ucak = UcuzUcak()
 

@@ -8,11 +8,11 @@ services:
         container_name: kolektifapi
         build: .
         ports:
-            - 8080:8080
+            - 1453:1453
         image: kolektifapi:latest
         restart: always
         volumes:
-            - 'self:/usr/src/app'
+            - self:/usr/src/KolektifAPI
         networks:
             - network
 

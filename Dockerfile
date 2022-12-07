@@ -3,8 +3,8 @@
 # Docker Python İmajı
 FROM python:3.10.8-slim-buster
 
-WORKDIR /usr/src/app
-COPY ./ /usr/src/app
+WORKDIR /usr/src/KolektifAPI
+COPY ./ /usr/src/KolektifAPI
 
 # Gerekli Paketlerin Yüklenmesi
 RUN apt-get -y update && \
